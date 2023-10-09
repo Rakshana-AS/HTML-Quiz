@@ -1,0 +1,81 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: paleturquoise;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color:aliceblue;
+    width: 400px; /* Set a fixed width */
+    height: 380px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+h1 {
+    margin-top: 0;
+    color: #007bff;
+}
+
+/* ... rest of your CSS styles ... */
+
+
+
+#question {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#choices {
+    list-style: none;
+    padding: 0;
+}
+
+#choices li {
+    margin: 10px 0;
+    transition: background-color 0.3s ease;
+}
+
+#choices li:hover {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+#next-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#next-button:hover {
+    background-color: pink;
+}
+
+#score {
+    font-size: 18px;
+    margin-top: 20px;
+    color: #007bff;
+}
+.correct-answer {
+    background-color: #a7e69b; /* Green background for correct answer */
+}
+
+.wrong-answer {
+    background-color: #ff9999; /* Red background for wrong answer */
+}
